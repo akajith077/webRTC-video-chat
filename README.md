@@ -58,14 +58,30 @@ Ensure you have the following installed:
 
 3. **Start the server**:
    ```bash
-   node server.js
+   node server.js / npm run start
    ```
+   This will start your server on http://localhost:9000.
 
 4. **Access the app**:
    Open your browser and navigate to:
    ```
    http://localhost:9000/
    ```
+
+5. **Open PowerShell as Administrator**:
+   Start ngrok to expose port 9000.
+   In the PowerShell window, run the following command:
+   ```
+   ngrok http http://localhost:9000
+   ```
+   This will create a secure public URL (e.g., https://8e57-101-2-190-94.ngrok-free.app) that    forwards to your local server.
+
+ ![Screenshot 2025-05-07 090717](https://github.com/user-attachments/assets/afc602b2-624b-4e5c-8881-7302759e29ea)
+
+6.Use the ngrok URL on other devices.
+  Copy the Forwarding URL shown by ngrok (e.g., https://8e57-101-2-190-94.ngrok-free.app).
+  Paste it into a browser on another device (mobile, tablet, or remote computer).
+
 
 ## Usage
 
